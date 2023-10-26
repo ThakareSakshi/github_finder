@@ -1,15 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Sometype+Mono&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
 }
+
+h2{
+    text-align: center;
+}
+
+.searchbar{
+    padding:10px;
+    margin:50px  10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: rgb(191, 191, 192);
+    border-radius: 20px;
+    
+}
+input{
+    width: 90%;
+    padding:10px;
+    border:none;
+    outline: none;
+    background-color: transparent;
+}
+button{
+    padding:10px 20px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+}
+
 
 .user_container{
   padding:50px;
-  margin:50px;
+  margin:10px 10%;
   border-radius: 30px;
-  background-color: rgb(232, 168, 223);
-  font-size: 20px;
+  background-color: rgb(216, 216, 216);
+  font-size: 12.7px;
+  
 }
 
 .user_detail{
@@ -20,6 +53,8 @@
 .user_profile{
     display: flex;
     gap:30px;
+    align-items: center;
+
 
 }
 .profile_pic{
@@ -36,12 +71,25 @@
     justify-content:space-between;
     border-radius:20px;
     padding:10px;
-    background-color: rgb(207, 177, 235);
+    background-color: rgb(241, 240, 243);
 }
 .social_media{
     padding:20px;
     display: flex;
     justify-content: space-between;
+}
+.github_logo{
+    display:flex;
+    justify-content: center;
+}
+.font_bold{
+    font-weight: 700;
+    font-size: 16.2px;
+}
+a{
+    text-decoration: none;
+    color:blueviolet;
+    cursor: pointer;
 }
 
 

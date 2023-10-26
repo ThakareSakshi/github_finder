@@ -47,35 +47,46 @@ function findUser(userID){
 
 
 function displayUser(user){
+    let username= (user.login==null)?" -":user.login;
+    let name= (user.name==null)?" -":user.name;
+    let twitter_id= (user.twitter_username==null)?" -":user.twitter_username;
+    let location= (user.location==null)?" - ":user.location;
+    let website= (user.company==null)?" -":user.company;
     let container=document.createElement("div");
     container.innerHTML=`<div class="user_detail">
     <div class="user_profile">
         <img src="${user["avatar_url"]}" alt="" class="profile_pic">
         <div class="userID_container">
-            <div>${user.name}</div>
-            <div>@${user.login}</div>
+            <div class="font_bold">${name}</div>
+            <div class="font_bold"><a href="https://github.com/${username}">@${username}</a></div>
         </div>
 
     </div>
-    <div class="joining_date">
+    <div class="joining_date font_bold">
+    joined :
     ${user.created_at}
     </div>
   </div>
   <div class="user_bio">
+  <p class="font_bold">Bio</p>
   ${user.bio}
 
   </div>
   <div class="extra_detail">
-    <div>repose <br>  ${user.public_repos}</div>
-    <div>follower <br>  ${user.followers}</div>
-    <div> following <br>  ${user.following}</div>
+    <div><span class="font_bold">repos </span> <br> ${user.public_repos}</div>
+    <div><span class="font_bold">follower  </span><br>  ${user.followers}</div>
+    <div><span class="font_bold"> following  </span><br>  ${user.following}</div>
   </div>
 
   <div class="social_media">
-    <div><div>li</div> <div></div></div>
-    <div>leetcode hackerrank</div>
-
-  </div>`
+  <div>
+    <div><i class="fa fa-location-arrow" aria-hidden="true"></i> ${location} </div>
+    <div><i class="fa fa-link" aria-hidden="true"></i> ${website} </div>
+  </div>
+  <div>
+    <div><i class="fa fa-twitter-square" aria-hidden="true"></i> ${twitter_id} </div>
+  </div>
+</div>`
 
 
   user_container.innerHTML=container.innerHTML;

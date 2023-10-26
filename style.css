@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.user_container{
+  padding:50px;
+  margin:50px;
+  border-radius: 30px;
+  background-color: rgb(232, 168, 223);
+  font-size: 20px;
+}
+
+.user_detail{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.user_profile{
+    display: flex;
+    gap:30px;
+
+}
+.profile_pic{
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.user_bio{
+    margin:10px;
+    padding:10px;
+}
+.extra_detail{
+    display: flex ;
+    justify-content:space-between;
+    border-radius:20px;
+    padding:10px;
+    background-color: rgb(207, 177, 235);
+}
+.social_media{
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+

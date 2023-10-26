@@ -3,6 +3,25 @@
 let user_id_input=document.querySelector("#user_id");
 let search_btn=document.querySelector("#search_btn");
 let user_container=document.querySelector(".user_container");
+let mode=document.querySelector(".mode");
+
+
+
+//----------------changing mode------------------->
+mode.addEventListener("click",()=>{
+    if(mode.innerHTML=='<i class="fas fa-sun"></i>'){
+        document.body.style.backgroundColor="black";
+        // mode.style.color="white";
+        mode.innerHTML='<i class="fas fa-moon"></i>'
+    }
+    else{
+        document.body.style.backgroundColor="white";
+        mode.style.color="black";
+        
+        mode.innerHTML='<i class="fas fa-sun"></i>'
+       
+    }
+})
 
 
 // ---------- search user by  their github id---------------
